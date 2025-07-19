@@ -55,7 +55,7 @@ nav ul li a{
     height: 95vh;
     background: url(https://png.pngtree.com/background/20230527/original/pngtree-modern-highquality-exterior-render-of-a-modern-house-with-glass-windows-picture-image_2766516.jpg)
     no-repeat center center/cover;
-    margin-top: 140px;
+/*     margin-top: 140px; */
     display: flex;
     justify-content: center;
     align-items: center;
