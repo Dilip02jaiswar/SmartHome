@@ -210,6 +210,10 @@ gap: 20%;
     overflow: hidden;
     display: flex;
     align-items: end;
+    transition: filter 0.3s;
+}
+.promo-card:hover{
+    filter: brightness(0.5);
 }
 .promo-text{
     padding: 20px;
