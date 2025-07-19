@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* Header  */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;;
+}
+.pre-header {
+    background-color: #333435;
+    padding: 10px 30px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.icon-box  i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #ffffff;
+}
+/* Navbar */
+nav{
+    width: 100%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    border-bottom: 1px solid black;
+    flex-wrap: wrap;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li a{
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* Home  */
+.container{
+    width: 100%;
+    height: 95vh;
+    background: url(https://png.pngtree.com/background/20230527/original/pngtree-modern-highquality-exterior-render-of-a-modern-house-with-glass-windows-picture-image_2766516.jpg)
+    no-repeat center center/cover;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 50px;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+/* Card  */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.card-container h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.card-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    width: 300px;
+    height: 450px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-icon{
+    background-color: #a9a8a8;
+      border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.card-icon i{
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    background-color: white;
+  
+}
+.card-title h2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 25px;
+}
+.card-desc {
+    font-size: 18px;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.card-button {
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    background-color: #555;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.card-button:hover {
+    background-color: #333;
+    transform: translateY(-5px);
+}
+/* About  */
+.about-container{
+width: 100%;
+padding: 50px;
+display: flex;
+justify-content: center;
+background-color: #f7f7f7;
+flex-wrap: wrap;
+gap: 20%;
+}
+.about-text{
+    padding-inline: 30px;
+}
+.about-text h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.about-text h3{
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.about-text button{
+    background-color: transparent;
+    color: rgb(65, 156, 243);
+    border: 2px solid rgb(65, 156, 243);
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.about-text button:hover{
+    background-color: rgb(65, 156, 243);
+    color: white;
+}
+.fa-check{
+    color: green;
+    font-size: 25px;
+    margin-right: 15px;
+}
+/* Manage Everything  */
+.container2{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 40px 0;
+}
+.container2 h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.promo-container{
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 0 50px;
+    justify-content: center;
+}
+.promo-card{
+    height: 390px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+}
+.promo-text{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: white;
+}
+.promo-text hr, .promo-text h2 , .promo-text p{
+    margin-bottom: 10px;
+}
+
+.card1{
+    background: url(images/promo1.jpg) no-repeat center center/cover;
+}
+.card2{
+    background: url(images/promo2.jpg) no-repeat center center/cover;
+}
+.card3{
+    background: url(images/promo3.jpg) no-repeat center center/cover;
+}
+.card4{
+    background: url(images/promo4.jpg) no-repeat center center/cover;
+}
+.card5{
+    background: url(images/promo5.jpg) no-repeat center center/cover;
+}
+.card6{
+    background: url(images/promo6.jpg) no-repeat center center/cover;
+}
+
+/* container3 */
+.container3{
+    width: 100%;
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container3-text{
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    position: absolute
+}
+.container3::before{
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/promo1.jpg)no-repeat center center/cover;
+    opacity: 0.8;
+}
+.container3-text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+}
+.container3-text p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    color: white;
+}
+.container3-text button{
+     background-color: rgb(65, 156, 243);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    border: 2px solid rgb(65, 156, 243);
+}
+.container3-text button:hover{
+   
+    background-color: transparent;
+    color: rgb(65, 156, 243);
+}
+/* footer  */
+footer{
+    width: 100%;
+    background-color: #333435;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pre-footer {
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.pre-footer h1{
+    font-size: 40px;
+    word-spacing: 5px;
+    margin-bottom: 12px;
+}
+.pre-footer-content, .pre-footer-button{
+    width:40%;
+}
+.pre-footer-button button{
+        background-color: rgb(65, 156, 243);
+    color: white;
+    font-size: 20px ;
+    padding: 15px 35px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid rgb(65, 156, 243);
+}
+.pre-footer-button button:hover{
+    background-color: transparent;
+    color: rgb(65, 156, 243);
+}
+footer hr{
+    margin-bottom: 20px;
+    text-align: center;
+    width: 90%;
+}
+.footer-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ gap: 10px;
+
+}
+.footer-content{
+    /* width: fit-content; */
+    width: 30%;
+    /* border: 1px solid white; */
+    padding: 20px;
+}
+.footer-content hr{
+    width: 40%;
+}
+.footer-content img, .footer-content p , .footer-content h2, .footer-content a {
+    margin-bottom: 10px;
+}
+.footer-section a{
+    color: white;
+    display: block;
+    width: fit-content;
+}
+.footer-content .icon-box{
+    display: flex;
+}
+.middle{
+    padding-left: 10%;
+}
+.copyright{
+    width: 100%;
+    background-color: rgb(249, 243, 243);
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
